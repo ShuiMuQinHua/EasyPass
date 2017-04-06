@@ -4,7 +4,6 @@ import base_easy
 import utils
 from selenium.webdriver.common.keys import Keys
 
-
 class Easy_Cnblogs(base_easy.Base_Easy):
         search_key = "golang"
         siteurl = "http://www.cnblogs.com/"
