@@ -67,16 +67,16 @@ class Easy_Bi(base_easy.Base_Easy):
 
         def get_window_info(self):
                 self.driver.get("http://www.baidu.com")
-                print self.driver.get_window_size()
+                print(self.driver.get_window_size())
                 self.driver.maximize_window()
-                print self.driver.get_window_size()
+                print(self.driver.get_window_size())
 
         def scroll_window(self):
                 self.driver.get("http://www.baidu.com")
                 self.driver.set_window_size(500, 300)
                 # self.driver.set_window_position()
                 self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                print self.driver.get_window_size()
+                print(self.driver.get_window_size())
 
                 self.driver.create_options()
 
